@@ -13,3 +13,4 @@ CHIP fulladd{
     Or(a=t1, b=t2, out=temp);
     Or(a=temp, b=t3, out=carry);
 }
+//added a comment from github
