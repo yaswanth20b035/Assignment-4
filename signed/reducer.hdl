@@ -1,4 +1,9 @@
-CHIP 3to2_reducer{
+/*
+    this chip takes 3 partial products, adds the corresponding bits in each ppi and returns sum and carry busses
+    all 116 additions are done in parallel
+*/
+
+CHIP reducer{
     IN x[16],y[16],z[16];
     OUT sum[16],carry[16];
 

@@ -1,3 +1,7 @@
+/*
+    this is fulladder circuit
+*/
+
 CHIP fulladd{
     IN x,y,c;
     OUT sum,carry;
@@ -13,5 +17,3 @@ CHIP fulladd{
     Or(a=t1, b=t2, out=temp);
     Or(a=temp, b=t3, out=carry);
 }
-//jbbbbbbbbbbbbbbbbbbbbbbb
-
