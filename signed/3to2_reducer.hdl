@@ -1,0 +1,22 @@
+CHIP 3to2_reducer{
+    IN x[16],y[16],z[16];
+    OUT sum[16],carry[16];
+
+    PARTS:
+    fulladd(x=x[0],y=y[0],c=z[0],sum=sum[0],carry=carry[0]);
+    fulladd(x=x[1],y=y[1],c=z[1],sum=sum[1],carry=carry[1]);
+    fulladd(x=x[2],y=y[2],c=z[2],sum=sum[2],carry=carry[2]);
+    fulladd(x=x[3],y=y[3],c=z[3],sum=sum[3],carry=carry[3]);
+    fulladd(x=x[4],y=y[4],c=z[4],sum=sum[4],carry=carry[4]);
+    fulladd(x=x[5],y=y[5],c=z[5],sum=sum[5],carry=carry[5]);
+    fulladd(x=x[6],y=y[6],c=z[6],sum=sum[6],carry=carry[6]);
+    fulladd(x=x[7],y=y[7],c=z[7],sum=sum[7],carry=carry[7]);
+    fulladd(x=x[8],y=y[8],c=z[8],sum=sum[8],carry=carry[8]);
+    fulladd(x=x[9],y=y[9],c=z[9],sum=sum[9],carry=carry[9]);
+    fulladd(x=x[10],y=y[10],c=z[10],sum=sum[10],carry=carry[10]);
+    fulladd(x=x[12],y=y[11],c=z[11],sum=sum[11],carry=carry[11]);
+    fulladd(x=x[12],y=y[12],c=z[12],sum=sum[12],carry=carry[12]);
+    fulladd(x=x[13],y=y[13],c=z[13],sum=sum[13],carry=carry[13]);
+    fulladd(x=x[14],y=y[14],c=z[14],sum=sum[14],carry=carry[14]);
+    fulladd(x=x[15],y=y[15],c=z[15],sum=sum[15],carry=carry[15]);
+}
